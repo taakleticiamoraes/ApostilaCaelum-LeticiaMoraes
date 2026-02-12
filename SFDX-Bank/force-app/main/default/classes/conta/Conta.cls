@@ -1,4 +1,4 @@
-public with sharing class Conta {
+public with sharing abstract class Conta {
 
     private String numero;
     private String titular;
@@ -25,4 +25,6 @@ public with sharing class Conta {
     public Decimal getSaldo() {
         return saldo;
     }
+
+    public abstract Decimal calcularTaxa();
 }
