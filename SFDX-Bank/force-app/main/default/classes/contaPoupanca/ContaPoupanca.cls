@@ -4,6 +4,6 @@ public with sharing class ContaPoupanca extends Conta{
     }
     
     public override Decimal calcularTaxa() {
-        return getSaldo() * 0.005;
+        return getSaldo() * 0.05;
     }
 }
